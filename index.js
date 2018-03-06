@@ -58,6 +58,7 @@ function onEveryRequest(req, res){
             fs.readFile(path.join('static', route), function(err, buf){
             res.statusCode = 404
             res.setHeader('Content-Type', getType(route))
+            if (err) return res.end('404 page not found\n') // extra safeguard if four-o-four.html does not exist
             res.end(buf)
         })
     }
