@@ -1,0 +1,31 @@
+{
+  "name": "simple-server",
+  "description": "A simple Node.js http static file server",
+  "version": "1.0.0",
+  "homepage": "https://github.com/FJvdPol/simple-server",
+  "author": "Folkert-Jan van der Pol (http://github.com/FJvdPol)",
+  "repository": "FJvdPol/simple-server",
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "static/about/index.html",
+    "static/css/style.css",
+    "static/images/cat.png",
+    "static/images/hidethepainharold.jpg",
+    "static/images/IMG_6784.JPG",
+    "static/images/IMG_6870.JPG",
+    "static/about.html",
+    "static/four-o-four.html",
+    "static/index.html",
+    "package.json",
+    "README.md"
+  ],
+  "main": "index.js",
+  "keywords": [
+    "static",
+    "node",
+    "http",
+    "file",
+    "server"
+  ]
+}
