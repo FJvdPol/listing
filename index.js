@@ -22,11 +22,9 @@ function onEveryRequest(req, res){
 
         // check if folder contains an index.html, if so, send that
         if (fs.existsSync(path.join(staticRoute, 'index.html'))){
-            console.log("Index.html exists")
             route = path.join(staticRoute, 'index.html')  // request is for a directory, not a file. Default to that folder's index.html
             fs.readFile(route, onread) // try to read the file requested via the route
         } else {
-            console.log("Index.html does not exist")
             // if no index.html is present, send a list of items of the folder.
             fs.readdir(staticRoute, (err, files) => {
                 if (err) return throwFourOFour()
