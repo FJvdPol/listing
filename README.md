@@ -32,3 +32,7 @@ Will serve a page showing the contents of the files in an existing folder withou
 localhost/8000/nonexisting-file-or-folder
 ```
 Shows the content of the page directly inside static called 'four-o-four.html'
+
+
+## License
+[MIT](license.md) © [Folkert-Jan van der Pol](https://github.com/FJvdPol)
